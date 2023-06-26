@@ -67,7 +67,7 @@ const SectionWrapper = (Component, idName) =>
             speed: 450
           }}
           className='p-15 rounded-lg sm:w-[280px] w-full'
-          style={{ marginTop: '-70%' }}
+          style={{ marginTop: '-60%' }}
           >
           <div
             className="relative w-full h-[250px]"
