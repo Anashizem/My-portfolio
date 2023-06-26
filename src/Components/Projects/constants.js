@@ -5,7 +5,7 @@ const projects = [
       name: "PAT Association",
       description: 'PAT, the Tunisian Animal Protection, is a non-profit organization established in 2015. Their mission is to improve the welfare and rights of animals in Tunisia through rescue, rehabilitation, and adoption efforts. With a strong dedication to making a positive impact, PAT works tirelessly to provide assistance and find caring homes for animals in need.',
       image: pat ,
-      source_code_link: 'https://github.com/Anashizem/PAT.git',
+      source_code_link: 'https://github.com/Anashizem/PAT-Association.git',
     },
     {
       name: 'Robograph',
