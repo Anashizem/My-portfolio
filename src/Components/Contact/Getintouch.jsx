@@ -4,6 +4,7 @@ import { SectionWrapper } from './hoc';
 import { send, sendHover } from './assets';
 import emailjs from '@emailjs/browser';
 import { useState, useRef } from 'react';
+import { slideIn } from './utils/motion';
 
 
 
@@ -68,49 +69,23 @@ function Contact() {
       <h2 className='text-white text-5xl'>Contact</h2>
     </div>
   </motion.div>  
-  <form ref={formRef} onSubmit={handleSubmit} className="mt-20 flex flex-col gap-6">
+  <motion.div
+        variants={slideIn('left', 'tween', 0.2, 1)}
+        className="flex-[0.75] bg-jet p-8 rounded-2xl">
+  <form ref={formRef} onSubmit={handleSubmit} className="mt-10 flex flex-col mx-auto w-[600px] gap-6">
     <label className="flex flex-col">
-      <span className="text-white font-medium mb-4">Your Name</span>
+      <span className="text-white font-medium mb-4">Your Name :</span>
       <input type="text" name="name" value={form.name} onChange={handleChange } placeholder="What's your name?" className="py-4 px-6 placeholder:text-taupe text-timberWolf rounded-lg outline-none" />
     </label>
     <label className="flex flex-col">
-      <span className="text-white font-medium mb-4">Your Email</span>
-      <input type="email" name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your email?"
-              className="bg-eerieBlack py-4 px-6
-              placeholder:text-taupe
-              text-timberWolf rounded-lg outline-none
-              border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">
-              Your Message
-            </span>
-            <textarea
-              rows="7"
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="What's your message?"
-              className="bg-eerieBlack py-4 px-6
-              placeholder:text-taupe
-              text-timberWolf rounded-lg outline-none
-              border-none font-medium resize-none"
-            />
-          </label>
-
-          <button
-            type="submit"
-            className="live-demo flex justify-center sm:gap-4 
-            gap-3 sm:text-[20px] text-[16px] text-red-600 
-            font-bold font-beckman items-center py-5
-            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
-            w-[100px] h-[45px] rounded-[10px] bg-white 
-            hover:bg-battleGray hover:text-eerieBlack 
-            transition duration-[0.2s] ease-in-out"
+      <span className="text-white font-medium mb-4">Your Email :</span>
+      <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="What's your email?" className="bg-eerieBlack py-4 px-6 placeholder:text-taupe text-timberWolf rounded-lg outline-none border-none font-medium" />
+    </label>
+    <label className="flex flex-col">
+      <span className="text-white font-medium mb-4">Your Message :</span>
+      <textarea rows="7" name="message" value={form.message} onChange={handleChange} placeholder="What's your message?" className="bg-eerieBlack py-4 px-6 placeholder:text-taupe text-timberWolf rounded-lg outline-none border-none font-medium resize-none"/>
+    </label>
+    <button type="submit" className=" mx-auto flex justify-center sm:gap-4 gap-3 sm:text-[20px] text-[16px] font-beckman text-white font-bold items-center py-5 whitespace-nowrap sm:w-[130px] sm:h-[50px] w-[100px] h-[45px] rounded-[10px] bg-red-600 hover:bg-white hover:text-red-600 transition duration-[0.2s] ease-in-out"
             onMouseOver={() => {
               document
                 .querySelector('.contact-btn')
@@ -128,6 +103,7 @@ function Contact() {
             />
           </button>
         </form>
+        </motion.div>
       </>
 
 

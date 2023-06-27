@@ -8,6 +8,10 @@
     font-family: "poppins" , sans-serif;
   }
 }
+@font-face {
+  font-family: 'Beckman';
+  src: url('./Font/beckman.otf');
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,8 +23,3 @@
 body {
   background-color: #000000;
 }
-
-
-
-
-

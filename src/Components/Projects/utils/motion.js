@@ -1,5 +1,5 @@
 import { Tilt } from "react-tilt";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub ,BsFileEarmarkCodeFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { styles } from '../styles'
 
@@ -119,14 +119,14 @@ export const textVariant = (delay) => {
               className="w-full h-full object-cover rounded-lg"
             />
             <div
-              className="absolute inset-0 flex justify-start m-3 card-img_hover"
+              className="absolute inset-0 flex justify-end m-3 card-img_hover"
             >
               <div
                 onClick={() => window.open
                 (source_code_link, "_blank")}
                 className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
               >
-                <BsGithub size={30} color="red" />
+                <BsGithub size={30} color="black" />
               </div>
             </div>
           </div>
@@ -139,11 +139,12 @@ export const textVariant = (delay) => {
             className="mt-3 flex justify-center items-center "
           >
             <a 
-              className="shadow-md shadow-primary m-3 p-2 bg-tertiary w-[60%] text-[18px] bg-white rounded-lg flex justify-center text-black"
+              className="m-3 p-2 w-[60%] font-beckman text-[18px] bg-white rounded-lg flex justify-between text-red-600 hover:bg-red-600 hover:text-white"
               href={source_code_link}
               target='_blank'
             >
               See the code
+              <BsFileEarmarkCodeFill size={25}/>
             </a>
           </div>
         </Tilt>

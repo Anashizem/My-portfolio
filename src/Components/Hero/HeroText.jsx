@@ -28,7 +28,7 @@ function HeroText() {
               className="flex justify-center items-center w-48 sm:w-48 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-white focus:ring-1 hover:bg-red-600 text-black-500 hover:text-white duration-500"
             >
               <FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
-              <span className="text-sm font-medium sm:text-lg duration-100" id="repulse-span">
+              <span className="text-sm font-medium sm:text-lg duration-100 font-beckman" id="repulse-span">
                 Download CV
               </span>
             </a>

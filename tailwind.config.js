@@ -7,6 +7,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       signature:["Great vibes"],
+      beckman: ['Beckman'],
     },
   },
   plugins: [],
