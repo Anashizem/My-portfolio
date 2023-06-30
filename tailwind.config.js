@@ -8,7 +8,20 @@ module.exports = {
     fontFamily: {
       signature:["Great vibes"],
       beckman: ['Beckman'],
+      mova : ['mova'],
+      arenq :["arenq"]
+    },
+    screens: {
+      xs: '450px',
+      sm: '640px',
+      md: '768px',
+      xmd: '900px',
+      lg: '1025px',
+      xl: '1280px',
+      '2xl': '1536px',
+      '3xl': '1800px',
     },
   },
+
   plugins: [],
 }

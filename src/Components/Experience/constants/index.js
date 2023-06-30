@@ -3,7 +3,7 @@ import { ensilogo , ipeimlogo , educationlogo} from "../assets"
 const experiences = [
     {
       title: 'Bachelor degree',
-      company_name: 'High school "Rue Fattouma Bourguiba Monastir',
+      company_name: 'School Rue Fattouma Bourguiba Monastir',
       icon : educationlogo,
       iconBg: '#fff', 
       date: '2019-2020',

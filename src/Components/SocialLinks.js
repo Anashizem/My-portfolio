@@ -60,7 +60,7 @@ const SocialLinks = () => {
           >
             <a
               href={href}
-              className="text-base font-medium flex justify-between items-center w-full text-red-600"
+              className="text-base font-medium font-beckman text-[18px] flex justify-between items-center w-full text-red-600"
               target="_blank"
               rel="noreferrer"  
             >

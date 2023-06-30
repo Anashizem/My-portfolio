@@ -33,19 +33,18 @@ const NavBar = () => {
       <div>
         <Link to="About Me"><h1 className="text-6xl cursor-pointer font-signature ml-5 mt-5  ">Port<span className="text-red-600">Folio</span></h1></Link>
       </div>
-      <ul className="hidden md:flex text-xl">
+      <ul className="hidden xmd:flex">
         {links.map(({ id, link }) => (
-          <li key={id} className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-125 duration-200">
+          <li key={id} className="px-4 cursor-pointer font-mediumf uppercase font-mova text-[21px] text-white hover:scale-125 duration-200">
             <Link to={link} smooth duration={500}> {link} </Link>
           </li>
         ))}
       </ul>
-
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 text-white md:hidden"
+        className="cursor-pointer pr-4 text-white xmd:hidden z-10"
       >
-        {nav ? <FaTimes size={40} /> : <FaBars size={40} />}
+        {nav ? <FaTimes size={40} />:<FaBars size={40} />}
       </div>
 
       {nav && (
@@ -53,7 +52,7 @@ const NavBar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="cursor-pointer px-4 capitalize py-6 text-4xl"
+              className="cursor-pointer px-4 uppercase font-arenq py-6 text-4xl "
             >
               <Link
                 onClick={() => setNav(!nav)}
@@ -67,6 +66,7 @@ const NavBar = () => {
           ))}
         </ul>
       )}
+
     </div>
   );
 };

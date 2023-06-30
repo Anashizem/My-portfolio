@@ -12,6 +12,15 @@
   font-family: 'Beckman';
   src: url('./Font/beckman.otf');
 }
+@font-face {
+  font-family: 'mova';
+  src: url('./Font/mova.otf');
+}
+@font-face {
+  font-family: 'arenq';
+  src: url('./Font/arenq.otf');
+}
+
 * {
   margin: 0;
   padding: 0;

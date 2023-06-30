@@ -7,11 +7,11 @@ function HeroText() {
     <div className=" heroText h-5/6 w-full absolute">
       <div className=" max-h-screen-lg mx-auto flex flex-col items-center justify-center h-full px-20 ml-20 md:flex-row" >
         <div className="flex flex-col justify-center w-screen gap-3 ml-10 z-10">
-          <h1 className="text-4xl sm:text-6xl font-bold text-red-500">
+          <h1 className="text-4xl sm:text-6xl uppercase font-bold text-red-500">
               <Typewriter 
                   onInit={(typewriter) => {
                       typewriter
-                      .typeString("<span style='color: #Ffffff;'>I'am</span> Anas Hizem !")
+                      .typeString("<span style= 'color: #Ffffff;'>I'am</span> Anas Hizem !")
                       .pauseFor(500)
                       .deleteAll()
                       .start();
