@@ -23,6 +23,7 @@
     "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
     "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
     "tsparticles": "^2.10.1",
     "typewriter-effect": "^2.20.1",
     "web-vitals": "^2.1.4"

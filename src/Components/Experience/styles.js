@@ -1,4 +1,4 @@
-const styleTitle   = {
+const styles = {
     innerWidth: '2xl:max-w-[1280px] w-full',
     interWidth: 'lg:w-[80%] w-[100%]',
   
@@ -32,4 +32,4 @@ const styleTitle   = {
       'sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins',
   };
   
-  export { styleTitle };
+  export { styles };

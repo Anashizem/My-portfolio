@@ -9,7 +9,7 @@ import { slideIn } from './utils/motion';
 
 
 function Contact() {
-  
+  const title ="Get in touch "
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -65,7 +65,14 @@ function Contact() {
     <>
     <motion.div variants={textVariant()}>
     <div className='flex flex-col w-full gap-3 z-10'>
-      <h1 className='text-7xl font-bold text-red-500 '>Get in touch</h1>
+      <h1 className='text-7xl font-bold text-red-500'>          
+            {title.split("").map((char, index) => {
+              if(char === " ") {
+                return " ";
+              }
+              return <span key={index} className="bounce">{char}</span>
+            })}
+      </h1> 
       <h2 className='text-white text-5xl'>Contact</h2>
     </div>
   </motion.div>  

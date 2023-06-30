@@ -24,3 +24,35 @@ body {
   background-color: #000;
 }
 
+.bounce {
+  transition: all 0.3s ease-out;
+}
+
+.bounce:hover {
+  display: inline-block;
+  animation: rubberband 0.8s ease-out;
+  color: #FF0000;
+}
+@keyframes rubberband {
+  0% {
+    transform: scaleX(1);
+  }
+  40% {
+    transform: scaleX(1.12) scaleY(0.75);
+  }
+  55% {
+    transform: scaleX(0.85) scaleY(1);
+  }
+  65% {
+    transform: scaleX(1.09) scaleY(0.85);
+  }
+  75% {
+    transform: scaleX(0.9) scaleY(1);
+  }
+  90% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}

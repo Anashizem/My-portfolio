@@ -19,15 +19,19 @@ const NavBar = () => {
       link: "Projects",
     },
     {
+      id :4 ,
+      link : "Experience"
+    },
+    {
       id: 5,
       link: "Contact",
     },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-[80px] px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-[80px] px-4 text-white fixed z-20">
       <div>
-        <Link to="About Me"><h1 className="text-6xl cursor-pointer font-signature ml-5 mt-5 ">Port<span className="text-red-600">Folio</span></h1></Link>
+        <Link to="About Me"><h1 className="text-6xl cursor-pointer font-signature ml-5 mt-5  ">Port<span className="text-red-600">Folio</span></h1></Link>
       </div>
       <ul className="hidden md:flex text-xl">
         {links.map(({ id, link }) => (
