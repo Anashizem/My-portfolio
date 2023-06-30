@@ -120,7 +120,7 @@ export const heroOptions = {
       animation: {
         count: 0,
         enable: true,
-        speed: 0.2,
+        speed: 0.5,
         decay: 0,
         sync: true,
         destroy: 'none',
