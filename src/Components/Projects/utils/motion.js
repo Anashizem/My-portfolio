@@ -107,8 +107,7 @@ export const textVariant = (delay) => {
             scale: 1,
             speed: 450
           }}
-          className='p-15 rounded-lg sm:w-[280px] w-full'
-          style={{ marginTop: '-60%' }}
+          className='rounded-lg md:w-[300px] w-full'
           >
           <div
             className="relative w-full h-[250px]"
@@ -131,7 +130,7 @@ export const textVariant = (delay) => {
             </div>
           </div>
   
-          <div className="mt-3">
+          <div className="mt-3" >
             <h3 className="text-red-600 font-bold text-[25px]">{name}</h3>
             <p className="mt-3 text-white text-[17px] leading-[20px]">{description}</p>
           </div>
@@ -158,8 +157,8 @@ export const textVariant = (delay) => {
           variants={staggerContainer()}
           initial='hidden'
           whileInView='show'
-          viewport={{ once: false, amount: 0.25 }}
-          className={`${styles.padding} max-w-7xl mx-auto relative z-0 `}
+          viewport={{ once: true, amount: 0.25 }}
+          className={`${styles.padding} max-w-6xl mx-auto relative z-0 `}
         >
           <span className='hash-span' id={idName}>
             &nbsp;

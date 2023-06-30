@@ -1,4 +1,4 @@
-import { linefollower, pat, robograph, stockmanager } from "./assets";
+import { linefollower, pat, robograph, stockmanager ,portfolio } from "./assets";
 
 const projects = [
     {
@@ -25,5 +25,11 @@ const projects = [
       image :linefollower,
       source_code_link:'https://github.com/Anashizem/Line-Follower.git',
     },
+    {
+      name :'Portfolio personnel',
+      description :"Un site web présentant mes projets et compétences à des clients ou employeurs potentiels.",
+      image : portfolio,
+      source_code_link :'https://github.com/Anashizem/My-portfolio.git',
+    }
   ];
   export { projects };

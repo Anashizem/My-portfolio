@@ -2,11 +2,11 @@ export const heroOptions = {
   autoPlay: true,
 
   fullScreen: {
-    enable: false,
+    enable: true,
     zIndex: 0,
   },
 
-  detectRetina: true,
+  detectRetina: false,
   fpsLimit: 120,
 
   interactivity: {
@@ -17,7 +17,7 @@ export const heroOptions = {
           selectors: '#repulse-div',
           enable: true,
           mode: 'bounce',
-          type: 'circle',
+          type :'circle',
         },
         {
           selectors: '#repulse-div',
@@ -33,30 +33,6 @@ export const heroOptions = {
         },
         {
           selectors: '#repulse-span',
-          enable: true,
-          mode: 'bounce',
-          type: 'circle',
-        },
-        {
-          selectors: '#togglebutton',
-          enable: true,
-          mode: 'repulse',
-          type: 'circle',
-        },
-        {
-          selectors: '#togglebutton',
-          enable: true,
-          mode: 'bounce',
-          type: 'circle',
-        },
-        {
-          selectors: '#scroller',
-          enable: true,
-          mode: 'repulse',
-          type: 'circle',
-        },
-        {
-          selectors: '#scroller',
           enable: true,
           mode: 'bounce',
           type: 'circle',
@@ -126,12 +102,12 @@ export const heroOptions = {
       enable: true,
       random: false,
       size: false,
-      speed: 0.8,
+      speed: 0.5,
       outMode: 'bounce',
     },
     number: {
       limit: 0,
-      value: 50,
+      value: 40,
     },
 
     opacity: {
