@@ -29,7 +29,7 @@ const projects = [
       name :'Portfolio personnel',
       description :"Un site web présentant mes projets et compétences à des clients ou employeurs potentiels.",
       image : portfolio,
-      source_code_link :'https://github.com/Anashizem/My-portfolio.git',
+      source_code_link :'https://github.com/Anashizem/my-portfolio.git',
     }
   ];
   export { projects };

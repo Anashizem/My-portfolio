@@ -131,8 +131,8 @@ export const textVariant = (delay) => {
           </div>
   
           <div className="mt-3" >
-            <h3 className="text-red-600 font-bold text-[25px]">{name}</h3>
-            <p className="mt-3 text-white text-[17px] leading-[20px]">{description}</p>
+            <h3 className="text-red-600 font-bold font-beckman text-[27px]">{name}</h3>
+            <p className="mt-2 text-white text-[17px] leading-[20px]">{description}</p>
           </div>
           <div 
             className="mt-3 flex justify-center items-center "
