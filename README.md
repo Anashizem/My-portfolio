@@ -9,6 +9,6 @@ Click [here](https://anashizem.github.io/my-portfolio/) to view the live demo.
 - Email JS
 ## Authors
 - [Github](https://github.com/Anashizem)
-- [Linkedin](https://www.linkedin.com/in/anas-hizem-52853b265/)
+- [Linkedin](https://www.linkedin.com/in/hizem-anas-74a7b3285/)
 
 
